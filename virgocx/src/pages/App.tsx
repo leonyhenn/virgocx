@@ -19,38 +19,38 @@ class Main extends React.Component<any, any> {
   render() {
     let title,leftUp,leftDown,rightUp,rightDown;
     const screenWidth = this.state.width;
-    if (screenWidth >= 1024){
+    if (screenWidth >= 390){
       title = <img src={"./assets/images/title-hor.png"} />
-      leftUp = <img src={"./assets/images/left-up.png"} className="w-[560px] h-[446px]"/>
-      leftDown = <img src={"./assets/images/left-down.png"} className="w-[560px] h-[578px]"/>
-      rightUp = <img src={"./assets/images/right-up.png"} className="w-[560px] h-[628px] "/>
-      rightDown = <img src={"./assets/images/right-down.png"} className="w-[560px] h-[396px] "/>
+      leftUp = <img src={"./assets/images/left-up.png"} />
+      leftDown = <img src={"./assets/images/left-down.png"} />
+      rightUp = <img src={"./assets/images/right-up.png"} />
+      rightDown = <img src={"./assets/images/right-down.png"} />
     }else{
       title = <img src={"./assets/images/title-ver.png"} />
-      leftUp = <img src={"./assets/images/left-up-small.png"} className="w-[325px] h-[230px] "/>
-      leftDown = <img src={"./assets/images/right-up-small.png"} className="w-[325px] h-[230px] "/>
-      rightUp = <img src={"./assets/images/left-down-small.png"} className="w-[325px] h-[230px] "/>
-      rightDown = <img src={"./assets/images/right-down-small.png"} className="w-[325px] h-[230px] "/>
+      leftUp = <img src={"./assets/images/left-up-small.png"} />
+      leftDown = <img src={"./assets/images/right-up-small.png"} />
+      rightUp = <img src={"./assets/images/left-down-small.png"} />
+      rightDown = <img src={"./assets/images/right-down-small.png"} />
     }
     return (
     <div className="flex flex-col items-center">
-      <div className="pb-[40px] lg:pb-[84px] pt-[49px] lg:pt-[109px]">
+      <div className="p-[12%] desktop:p-[10%]">
         {title}
       </div>
-      <div className="flex flex-col lg:flex-row items-center">
-        <div className="flex-col">
-          <div className="w-[325px] h-[230px] lg:w-[560px] lg:h-[446px] ">
+      <div className="flex flex-col desktop:flex-row items-center w-full">
+        <div className="flex-col desktop:w-1/2 flex flex-row items-end">
+          <div className="w-full flex flex-col items-end">
             {leftUp}
           </div>
-          <div className="w-[325px] h-[230px] lg:w-[560px] lg:h-[578px] ">
+          <div className="w-full flex flex-col items-end">
             {leftDown}
           </div>
         </div>
-        <div className="flex-col">
-          <div className="w-[325px] h-[230px] lg:w-[560px] lg:h-[628px] ">
+        <div className="flex-col desktop:w-1/2 flex flex-row items-start">
+          <div className="w-full flex flex-col items-start">
             {rightUp}
           </div>
-          <div className="w-[325px] h-[230px] lg:w-[560px] lg:h-[396px] ">
+          <div className="w-full flex flex-col items-start">
             {rightDown}
           </div>
         </div>
