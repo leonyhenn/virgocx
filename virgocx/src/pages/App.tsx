@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Main extends React.Component {
-  constructor(props){
+class Main extends React.Component<any, any> {
+  constructor(props:any){
     super(props)
     this.state = {height:0,width:0};
   }
