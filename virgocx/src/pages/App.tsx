@@ -34,7 +34,7 @@ class Main extends React.Component<any, any> {
     }
     return (
     <div className="flex flex-col items-center">
-      <div className="p-[12%] desktop:p-[10%]">
+      <div className="p-[12%] desktop:py-[5%] desktop:px-[10%]">
         {title}
       </div>
       <div className="flex flex-col desktop:flex-row items-center w-full">
