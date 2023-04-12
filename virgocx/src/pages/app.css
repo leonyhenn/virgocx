@@ -1,0 +1,50 @@
+.app{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.picture-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.vertical-gap{
+  height: 1053px;
+  width: 29px;
+  background-color: pink;
+}
+.left-container{
+  flex-direction: column;
+
+}
+
+.left-up{
+  width: 560px;
+  height: 446px;
+  background-color: white;
+}
+.horizontal-gap{
+  height:29px;
+  width: 560px;
+  background-color: pink;
+}
+/* .left-down{
+  width: 560px;
+  height: 578px;
+  background-color: blue;
+} */
+.right-container{
+  flex-direction: column;
+}
+.right-up{
+  width: 560px;
+  height: 628px;
+  background-color: yellow;
+
+}
+.right-down{
+  width: 560px;
+  height: 396px;
+  background-color: green;
+}
