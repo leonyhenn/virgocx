@@ -33,8 +33,6 @@ class Main extends React.Component {
       rightUp = <img src={"./assets/images/left-down-small.png"} className="w-[325px] h-[230px] "/>
       rightDown = <img src={"./assets/images/right-down-small.png"} className="w-[325px] h-[230px] "/>
     }
-    
-
     return (
     <div className="flex flex-col items-center">
       <div className="pb-[40px] lg:pb-[84px] pt-[49px] lg:pt-[109px]">
