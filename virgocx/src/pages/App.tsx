@@ -4,7 +4,6 @@ class Main extends React.Component {
   constructor(props){
     super(props)
     this.state = {height:0,width:0};
-    this.forceUpdate()
   }
   updateDimensions = () => {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
